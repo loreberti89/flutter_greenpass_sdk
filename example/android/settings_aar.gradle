@@ -1,0 +1,9 @@
+package example.android
+
+include ':app'
+include ':dgc-sdk'
+include ':decoder'
+rootProject.name = 'flutter_greenpass_sdk'
+project(':dgc-sdk').projectDir = new File("../../libs/it-dgc-verificac19-sdk-android/sdk")
+project(':decoder').projectDir = new File("../../libs/dgca-app-core-android/decoder")
+
